@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Room Alert</title>
+    <!-- linkki jquery mobilen yleiseen tyylitiedostoon -->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css">
+    <!-- linkki jqueryn kirjaston -->
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <!--<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>-->
+    <!-- linkki jquery mobilen kirjastoon -->
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="https://rawgithub.com/arschmitz/jquery-mobile-datepicker-wrapper/master/jquery.mobile.datepicker.css" />
+    <script src="https://rawgithub.com/jquery/jquery-ui/1-10-stable/ui/jquery.ui.datepicker.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="etusivu">
+
+<form>
+    Kurssin nimi: <input type="text" id="test" />
+    <input type="submit" onclick="showData()" class="ui-shadow ui-btn ui-corner-all" value="Tallenna" />
+</form>
+    <div data-role="footer">
+        <p id="show"></p>
+    </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
